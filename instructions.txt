@@ -4,7 +4,7 @@ Steps to Execute the Application:
 #Running the backend
 
 Step 1: cd backend
-Step 2: pip3 install requirements.txt
+Step 2: pip3 install -r requirements.txt
 Step 3: python3 app.py
 
 #Running the front-end
