@@ -2,14 +2,11 @@ FROM python:3
 
 WORKDIR /app
 
-ENV FLASK_APP = app.py
-
-COPY ./requirements.txt .
+COPY . .
 
 RUN pip3 install -r requirements.txt
 
-COPY . .
-
+EXPOSE 80
 
 CMD [ "python3", "app.py" ]
 

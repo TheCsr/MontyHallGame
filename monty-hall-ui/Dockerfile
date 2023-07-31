@@ -2,13 +2,15 @@ FROM node:14-slim
 
 WORKDIR /app
 
-COPY . .
+COPY package.json .
 
 RUN npm install @mui/material @emotion/react @emotion/styled redux react-redux redux-thunk
 
 RUN npm install
 
-EXPOSE 5000
+COPY . .
+
+EXPOSE 3000
 
 CMD ["npm", "start"]
 

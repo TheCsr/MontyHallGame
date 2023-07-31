@@ -1,18 +1,18 @@
-version: "2.16"
+version: "3.8"
 services:
   backend:
     build: ./backend
     ports:
-    - "5000:5000"
-    environment:
-      FLASK_ENV: production
+    - "80:80"
 
-  web:
+  frontend:
     build: ./monty-hall-ui
     ports:
-    - "80:80"
+    - "3000:3000"
     depends_on:
     - backend
+    stdin_open: true
+    tty: true
 
 
   
