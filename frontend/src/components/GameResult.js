@@ -77,7 +77,7 @@ function GameResult(props) {
     )
 }
 GameResult.propTypes = {
-    score: PropTypes.array.isRequired
+    score: PropTypes.object.isRequired
 };
 
 export default GameResult;
